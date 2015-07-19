@@ -13,12 +13,12 @@ For each record in the dataset it is provided:
    http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 The project entailed: 
-Uploading the data into R
-Merging the training and the test sets.
-Extracting only the measurements on the mean and standard deviation for each measurement.
-Using descriptive activity names to name the activities in the data set
-Appropriately labeling the data set with descriptive variable names. 
-Finally, creating a second, independent tidy data set with the average of each variable for each activity and each subject.
+- Uploading the data into R;
+- Merging the training and the test sets;
+- Extracting only the measurements on the mean and standard deviation for each measurement;
+- Using descriptive activity names to name the activities in the data set;
+- Appropriately labeling the data set with descriptive variable names;
+- Finally, creating a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 The resulting tidy data set contains 180 observations (6 activities x 30 participants) with 81 variables (the variables of the original data set involving the mean or standard deviation). Each observation includes the mean value of each variable for each activity and each subject. The first two variables of the tidy data set are simply the names of the activities and the participant identifiers. Other variables are as follows:
  [3] "TimeBodyAcceleration-mean()-X"                    
