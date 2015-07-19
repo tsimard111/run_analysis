@@ -12,21 +12,21 @@ I attempted to make my script as clear as possible. While I'm certain that more 
 
 --I also found that sumarise_each is a very useful dplyr command that was not mentioned in the course lectures or tutorials. I used that chained with group_by to create the final tidy data set.
 
-I believe everything else I did has been covered either in this course or the R programming course.  I will include here a list of all the steps I took. These are also noted in the run_analysis.R code itself.
+I believe everything else I did has been covered either in this course or the R programming course.  I will include here a list of all the steps in the script. These are also noted in the run_analysis.R code itself.
 
-1. Created a folder for the project.
-2. Downloaded the assignment files.
-3. Unziped the files to the created directory.
-4. Read all of the required files.
-5. Merged training and test sets using rbind.
-6. Merged values with subject and activity numbers using cbind.
-7. Created provisional variable names (the first two are just "subject" and "activity" the rest are taken from V$2 of features.txt
-8. Created a new "smallData" dataframe using the first two columns along with any columns with names containing "mean" or "std" (this is the bit of code where I used the grep command).
-9. Assigned labels to the factors of the activity column
-10. Replaced some abbreviations and jargon in the variable names to make them more clearly descriptive (this is where I made use of gsub).
-11. Then my script requires the dplyr package, so I made a condition stating that if dplyr is not already required then it should be installed and loaded.
-12. Using the dplyr package, I created a new dataset that groups by activity and subject and then provides the mean value in each of the variables for each grouping. The resulting data set should be tidy, with the rows representing all of the permutations of subjects and activities and each column representing a distinct variable.
-13. The script then writes a copy of the code as a textfile without row names.
+1. Creates a folder for the project.
+2. Downloads the assignment files.
+3. Unzips the files to the created directory.
+4. Reads all of the required files.
+5. Merges training and test sets using rbind.
+6. Merges values with subject and activity numbers using cbind.
+7. Creates provisional variable names (the first two are just "subject" and "activity" the rest are taken from V$2 of features.txt
+8. Creates a new "smallData" dataframe using the first two columns along with any columns with names containing "mean" or "std" (this is the bit of code where I used the grep command).
+9. Assigns labels to the factors of the activity column
+10. Replaces some abbreviations and jargon in the variable names to make them more clearly descriptive (this is where I made use of gsub).
+11. A condition stating that if dplyr is not already required then it should be installed and loaded.
+12. Uses the dplyr package to create a new dataset that groups by activity and subject and then provides the mean value in each of the variables for each grouping. The resulting data set should be tidy, with the rows representing all of the permutations of subjects and activities and each column representing a distinct variable.
+13. Writes a copy of the code as a textfile without row names.
 
 For information on the origninal data set and the variables of the tidy data set see the codebook.md file. 
 I hope my code is intuitive and easy to follow. Thanks for reviewing my work.
