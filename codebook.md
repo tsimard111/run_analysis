@@ -1,4 +1,4 @@
-## A code book that describes the variables, the data, and any transformations or work that you performed to clean up the data.
+## A code book that describes the variables, the data, and any transformations or work performed to clean up the data.
 This project, part of the Coursera Getting and Cleaning Data course, makes use of the "Human Activity Recognition Using Smartphones Data Set" from the UCI Machine Learning Repository: a dataset built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. 
 The original dataset contains 10299 observations, each with 561 variables. The authors of the dataset provide this description:
 
@@ -101,3 +101,4 @@ The resulting tidy data set contains 180 observations (6 activities x 30 partici
 [81] "FrequencyBodyGyroJerkMagnitude-meanFreq()"
 
 I tried my best to remove any jargon from the variable names, so I hope that in these variable names in combination with the description of the original data set from the authors, which includes information about how the data was obtained and the units of measurement used, will be sufficient for understanding the meanings of the variables. To be entirely honest, for me the original authors did not provide enough information about the "jerk" signals. I assume these are measures of times when the gyroscope or accelerometer were suddenly pulled in a direction.
+For details on the steps taken to create the tidy data set, see my readme file. Notes on the steps taken are also included in the run_analysis.R file itself.
