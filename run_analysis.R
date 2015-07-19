@@ -35,9 +35,11 @@ names(smallData)<-gsub("Mag", "Magnitude", names(smallData))
 names(smallData)<-gsub("^t", "Time", names(smallData))
 names(smallData)<-gsub("^f", "Frequency", names(smallData))
 ## Creates a second, data set with the average of each variable for each activity and each subject.
+       ## First installs/loads the dplyr package if it is not already loaded.
 if(!require(dplyr)){
     install.packages("dplyr")
     library(dplyr)
 }
+       ## Then uses a simple dplyr command to construct the new tidy data set.
 tidy <- smallData %>% group_by(Activity, Subject) %>% summarise_each(funs(mean))
 write.table(tidy, file = "tidydata.txt",row.name=FALSE)
