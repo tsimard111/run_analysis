@@ -21,6 +21,7 @@ The project entailed:
 - Finally, creating a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 The resulting tidy data set contains 180 observations (6 activities x 30 participants) with 81 variables (the variables of the original data set involving the mean or standard deviation). Each observation includes the mean value of each variable for each activity and each subject. The first two variables of the tidy data set are simply the names of the activities and the participant identifiers. Other variables are as follows:
+ 
  [3] "TimeBodyAcceleration-mean()-X"                    
  [4] "TimeBodyAcceleration-mean()-Y"                    
  [5] "TimeBodyAcceleration-mean()-Z"                    
