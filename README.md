@@ -9,6 +9,7 @@ Note that the description of the README.md file is unclear. I am assuming that t
 I attempted to make my script as clear as possible. While I'm certain that more efficient code is possible, I believe my code is well written. Most of the techniques used in the code are covered in the course lectures. A couple of exceptions:
 
 --I used grep when subsetting the data to include only columns dealing with mean and standard deviation. I then used gsub to replace jargon in the column names. For info on those commands see http://www.inside-r.org/r-doc/base/gsub
+EDIT--apparently the grep command is covered in week 4 lectures...It would be nice if material helpful for assignments were covered before assignments are due.
 
 --I also found that sumarise_each is a very useful dplyr command that was not mentioned in the course lectures or tutorials. I used that chained with group_by to create the final tidy data set.
 
