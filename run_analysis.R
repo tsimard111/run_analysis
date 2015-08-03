@@ -33,7 +33,7 @@ names(smallData)<-gsub("Acc", "Acceleration", names(smallData))
 names(smallData)<-gsub("Mag", "Magnitude", names(smallData))
 names(smallData)<-gsub("^t", "Time", names(smallData))
 names(smallData)<-gsub("^f", "Frequency", names(smallData))
-## Creates a second, data set with the average of each variable for each activity and each subject.
+## Creates a second data set with the average of each variable for each activity and each subject.
        ## First installs/loads the dplyr package if it is not already loaded.
 if(!require(dplyr)){
     install.packages("dplyr")
