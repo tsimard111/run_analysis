@@ -30,7 +30,6 @@ smallData$Activity <- factor(smallData$Activity,levels = c(1,2,3,4,5,6), labels=
 ## Appropriately label the data set with descriptive variable names by replacing some jargon.
 names(smallData)<-gsub("BodyBody", "Body", names(smallData))
 names(smallData)<-gsub("Acc", "Acceleration", names(smallData))
-names(smallData)<-gsub("Gyro", "Gyro", names(smallData))
 names(smallData)<-gsub("Mag", "Magnitude", names(smallData))
 names(smallData)<-gsub("^t", "Time", names(smallData))
 names(smallData)<-gsub("^f", "Frequency", names(smallData))
@@ -40,6 +39,6 @@ if(!require(dplyr)){
     install.packages("dplyr")
     library(dplyr)
 }
-       ## Then uses a simple dplyr command to construct the new tidy data set.
+       ## Then uses a simple dplyr chain to construct the new tidy data set.
 tidy <- smallData %>% group_by(Activity, Subject) %>% summarise_each(funs(mean))
 write.table(tidy, file = "tidydata.txt",row.name=FALSE)
